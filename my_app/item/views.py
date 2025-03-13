@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render,get_object_or_404
 from .models import Item
 
@@ -9,3 +10,6 @@ def detail(request,pk):
         'item' : item,
         'related_items' : related_items
     })
+
+def new(request):
+    return render(request, 'item/new.html')
