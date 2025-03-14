@@ -10,9 +10,9 @@
             {% for item in items %}
                 <div>
                     <a href="{% url 'item:detail' item.id %}">
-                        <div>
+                        <!--<div>
                             <img scr="{{ item.image.url }}" class="rounded-t-xl">
-                        </div>
+                        </div>-->
                         <div class="p-6 bg-white rounded-b-xl">
                             <h2 class="text-2xl">{{ item.name }}</h2>
                             <p class="text-gray-500">Price: {{ item.price }}</p>
@@ -38,3 +38,13 @@
         </div>
     </div>-->
 {% endblock %}
+<!--echo "# Blaicy_project1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Blaicy/Blaicy_project1.git
+git push -u origin main-->
+<!--git remote add origin https://github.com/Blaicy/Blaicy_project1.git
+git branch -M main
+git push -u origin main-->
